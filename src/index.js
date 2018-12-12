@@ -1,6 +1,39 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify';
+import VueRouter from "vue-router";
+
+import router from "./routes";
+
+Vue.use(VueRouter);
+Vue.use(Vuetify, {
+  theme: {
+    primary: '#2196f3',
+    secondary: '#757575',
+    accent: '#ffa000',
+    error: '#F44336',
+    warning: '#FBC02D',
+    info: '#0097A7',
+    success: '#4CAF50'
+  }
+});
+
+import App from './app.js';
 
 var app = new Vue({
-  el: '#app'
+  el: '#pytxapp',
+  router: router,
+  data() {
+    return {};
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.unflash();
+    });
+  },
+  methods: {
+    unflash() {
+      document.querySelector("#pytxapp").style.display = 'block';
+      document.querySelector("#splash").style.display = 'none';
+    }
+  }
 });
