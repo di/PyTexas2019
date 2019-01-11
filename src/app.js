@@ -24,7 +24,7 @@ export default Vue.component('pytx-app', {
   </v-content>
   <v-footer app>
     <v-flex text-xs-center>
-      v{{ RELEASE }}
+      {{ RELEASE }}
     </v-flex>
   </v-footer>
 </v-app>
