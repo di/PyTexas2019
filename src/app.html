@@ -1,0 +1,56 @@
+<v-app class="maintoolbar">
+  <v-toolbar color="primary">
+    <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+    <a href="/">
+      <img :src="image('img/icon.svg')" alt="" style="height: 32px;">
+    </a>
+    <v-toolbar-title>
+      <a href="/">PyTexas {{ YEAR }}</a>
+    </v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-toolbar-items class="hidden-xs-only">
+      <v-btn flat href="https://www.papercall.io/pytexas-2019
+" target="_blank">
+        Submit a Talk
+      </v-btn>
+      <v-btn flat to="/page/sponsors/prospectus">
+        Sponsor
+      </v-btn>
+    </v-toolbar-items>
+  </v-toolbar>
+  <v-content>
+    <v-container>
+      <router-view></router-view>
+    </v-container>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list>
+        <v-list-tile to="/">
+          <v-list-tile-action>
+            <v-icon>home</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>Home</v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile to="/page/sponsors/prospectus">
+          <v-list-tile-action>
+            <img :src="image('img/icons/sponsors.svg')" alt="">
+          </v-list-tile-action>
+          <v-list-tile-title>Sponsor</v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile href="https://www.papercall.io/pytexas-2019
+" target="_blank">
+          <v-list-tile-action>
+            <img :src="image('img/icons/talks.svg')" alt="">
+          </v-list-tile-action>
+          <v-list-tile-title>Submit a Talk</v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+  </v-content>
+  <v-footer>
+    <v-flex text-xs-center>
+      <router-link to="/page/about/code-of-conduct">Code of Conduct</router-link>
+       &nbsp;-&nbsp;
+      {{ RELEASE }}
+    </v-flex>
+  </v-footer>
+</v-app>

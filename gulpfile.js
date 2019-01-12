@@ -50,6 +50,7 @@ function watch () {
   gulp.watch("src/**/*.less", gulp.parallel(build_less));
   gulp.watch("src/**/*.js", gulp.parallel(build_js));
   gulp.watch("img/**/*", gulp.parallel(copy_files));
+  gulp.watch("md/**/*", gulp.parallel(copy_files));
 }
 
 var defaultTasks = gulp.series(
