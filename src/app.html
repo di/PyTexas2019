@@ -1,5 +1,5 @@
 <v-app class="maintoolbar">
-  <v-toolbar color="primary">
+  <v-toolbar color="primary" app>
     <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     <a href="/">
       <img :src="image('img/icon.svg')" alt="" style="height: 32px;">
@@ -43,6 +43,26 @@
           </v-list-tile-action>
           <v-list-tile-title>Submit a Talk</v-list-tile-title>
         </v-list-tile>
+        <v-list-group prepend-icon="svg" class="svg-group about">
+          <v-list-tile slot="activator">
+            <v-list-tile-title>About</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile to="/page/about/code-of-conduct">
+            <v-list-tile-title>Code of Conduct</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile to="/page/about/conference">
+            <v-list-tile-title>About the Conference</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile to="/page/about/diversity-statement">
+            <v-list-tile-title>Diversity Statement</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile to="/page/about/faq">
+            <v-list-tile-title>FAQ</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile to="/page/about/privacy">
+            <v-list-tile-title>Privacy Statement</v-list-tile-title>
+          </v-list-tile>
+        </v-list-group>
       </v-list>
     </v-navigation-drawer>
   </v-content>

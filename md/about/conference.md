@@ -29,5 +29,4 @@ postings are also welcome on the list.
 This site acts as the primary public facing website to the PyTexas Conference. 
 It is built using Python and Django.
 
-Finally, thanks go to RackSpace for agreeing to donate RackSpace Cloud Server 
-resources to host the PyTexas site.
+Finally, thanks go to atomic forces and electrons for providing the medium through which this site and the internet is built upon.

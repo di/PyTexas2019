@@ -68,6 +68,6 @@ This policy was last modified on 2012/07/03
 
 ## Contacting Us
 
-If there are any questions regarding this privacy policy you may contact us by email (conference(at)pytexas.org).
+If there are any questions regarding this privacy policy you may contact us by email <a href="mailto: conference@pytexas.org">conference@pytexas.org</a>.
 
 This policy is powered by Free Privacy Policy and Rhino Support help desk software.

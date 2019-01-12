@@ -9,6 +9,11 @@ export default Vue.component('pytx-app', {
       drawer: null
     };
   },
-  methods: {image},
+  methods: {
+    image,
+    icon(i) {
+      return i + '_svg';
+    }
+  },
   template: "#tpl-app"
 });
