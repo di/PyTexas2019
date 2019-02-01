@@ -37,10 +37,10 @@
       <h2>The Venue: Austin Public Library</h2>
       <div class="images">
         <a :href="image('img/apl/library1.png')">
-          <img :src="resize(image('img/apl/library1.png'), 300, 300)" alt="Library photo 1">
+          <img :src="resize(image('img/apl/library1.png'), 300, 300, 'fit=crop')" alt="Library photo 1">
         </a>
         <a :href="image('img/apl/library2.png')">
-          <img :src="resize(image('img/apl/library2.png'), 300, 300)" alt="Library photo 2">
+          <img :src="resize(image('img/apl/library2.png'), 300, 300, 'fit=crop')" alt="Library photo 2">
         </a>
       </div>
       <div class="map">

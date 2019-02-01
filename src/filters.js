@@ -2,7 +2,14 @@ export function image(path) {
   return IMAGES[path];
 }
 
-export function resize(url, w, h) {
+export function resize(url, w, h, extra) {
+  if (extra) {
+    extra = '&' + extra;
+  } else {
+    extra = '';
+  }
+
+
   if (url.indexOf("gravatar") > -1) {
     return url.replace("s=256", "s=" + w);
   }
@@ -11,7 +18,7 @@ export function resize(url, w, h) {
     return url;
   }
 
-  return `https://pytxapp.imgix.net${url}?w=${w}&h=${h}`;
+  return `https://pytxapp.imgix.net${url}?w=${w}&h=${h}${extra}`;
 }
 
 export function time(dt) {
