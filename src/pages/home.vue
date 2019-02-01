@@ -19,7 +19,7 @@
         <v-btn color="primary" to="/page/sponsors/prospectus">
           Become A Sponsor
         </v-btn>
-        <v-btn color="primary" href="https://ti.to/pytexas/pytexas-2019">
+        <v-btn color="primary" href="https://ti.to/pytexas/pytexas-2019" target="_blank">
           Register&nbsp;<img class="ext" :src="image('img/icons/external-white.svg')" alt="">
         </v-btn>
         <br><br>
