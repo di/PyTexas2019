@@ -1,6 +1,6 @@
 <template>
 <div class="home-page">
-  <v-card class="padding iconbg">
+  <v-card class="main padding iconbg">
     <div class="tc">
       <h1>PyTexas 2019</h1>
       <h2>
@@ -8,10 +8,7 @@
         <br>
         Austin, Texas
         <br>
-        at the <a href="http://austinlibrary.org/" target="_blank">Austin Public Library</a>
-        <!--at the-->
-        <!--<a href="https://www.stgdesign.com/the-bill-melinda-gates-computer-science-complex-and-dell-computer-science-hall/" target="_blank">Gates Dell Complex</a>-->
-        <!--at UT Austin-->
+        at the <a href="http://library.austintexas.gov/central-library" target="_blank">Central Austin Public Library</a>
       </h2>
       <div class="tc">
         <br>
@@ -34,25 +31,28 @@
         </em>
       </div>
     </div>
-    <!--<br>-->
-    <!--<v-divider></v-divider>-->
-    <!--<br>-->
-    <!--<div class="tc">-->
-    <!--  <h3 class="normal">-->
-    <!--    The Venue: Gates Dell Complex, UT Austin-->
-    <!--  </h3>-->
-    <!--  <p>-->
-    <!--    <a href="https://www.stgdesign.com/the-bill-melinda-gates-computer-science-complex-and-dell-computer-science-hall/ic5gxzhjh5nn4zh6hw42nwuo4cr9th">-->
-    <!--      <img :src="image('img/ut-complex/dell-gates-exterior.jpg')" alt="Gates Dell Complex">-->
-    <!--    </a>-->
-    <!--  </p>-->
-    <!--</div>-->
+  </v-card>
+  <v-card class="main padding venue">
+    <div class="tc">
+      <h2>The Venue: Austin Public Library</h2>
+      <div class="images">
+        <a :href="image('img/apl/library1.png')">
+          <img :src="resize(image('img/apl/library1.png'), 300, 300)" alt="Library photo 1">
+        </a>
+        <a :href="image('img/apl/library2.png')">
+          <img :src="resize(image('img/apl/library2.png'), 300, 300)" alt="Library photo 2">
+        </a>
+      </div>
+      <div class="map">
+        <v-btn to="page/venue" color="primary">
+          Map and More Info
+        </v-btn>
+      </div>
+    </div>
   </v-card>
 </div>
 </template>
 <script>
-import Vue from "vue";
-
 import { image, resize } from "../filters";
 
 export default {
@@ -65,7 +65,25 @@ export default {
   created() {
 
   },
-  methods: { image }
+  methods: { image, resize }
 };
 </script>
+<style lang="less">
+  .home-page {
+    .venue {
+      img {
+        width: 300px;
+        padding: 0 10px;
+      }
+
+      .images {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+</style>
 

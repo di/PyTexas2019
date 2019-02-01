@@ -42,7 +42,7 @@ function build_less (done) {
     .src(["src/**/*.less"])
     .pipe(plumber())
     .pipe(less({paths: []}))
-    .pipe(concat('pytexas.css'))
+    .pipe(concat('global.css'))
     .pipe(gulp.dest("dist"));
 }
 
