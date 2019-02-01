@@ -1,3 +1,4 @@
+<template>
 <v-app class="maintoolbar">
   <v-toolbar color="primary" app>
     <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
@@ -41,6 +42,12 @@
             <img :src="image('img/icons/talks.svg')" alt="">
           </v-list-tile-action>
           <v-list-tile-title>Submit a Talk</v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile to="/page/venue">
+          <v-list-tile-action>
+            <img :src="image('img/icons/venue.svg')" alt="">
+          </v-list-tile-action>
+          <v-list-tile-title>The Venue</v-list-tile-title>
         </v-list-tile>
         <v-list-group prepend-icon="svg" class="svg-group about">
           <v-list-tile slot="activator">
@@ -87,3 +94,22 @@
     </v-flex>
   </v-footer>
 </v-app>
+</template>
+<script>
+import { image, resize } from "./filters";
+
+export default {
+  data() {
+    return {
+      RELEASE, YEAR,
+      drawer: null
+    };
+  },
+  methods: {
+    image,
+    icon(i) {
+      return i + '_svg';
+    }
+  }
+};
+</script>

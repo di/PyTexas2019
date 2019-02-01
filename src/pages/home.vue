@@ -1,3 +1,4 @@
+<template>
 <div class="home-page">
   <v-card class="padding iconbg">
     <div class="tc">
@@ -6,6 +7,8 @@
         April 13th &amp; 14th
         <br>
         Austin, Texas
+        <br>
+        at the <a href="http://austinlibrary.org/" target="_blank">Austin Public Library</a>
         <!--at the-->
         <!--<a href="https://www.stgdesign.com/the-bill-melinda-gates-computer-science-complex-and-dell-computer-science-hall/" target="_blank">Gates Dell Complex</a>-->
         <!--at UT Austin-->
@@ -46,3 +49,23 @@
     <!--</div>-->
   </v-card>
 </div>
+</template>
+<script>
+import Vue from "vue";
+
+import { image, resize } from "../filters";
+
+export default {
+  data() {
+    return {
+      sponsors: [],
+      keynotes: []
+    };
+  },
+  created() {
+
+  },
+  methods: { image }
+};
+</script>
+

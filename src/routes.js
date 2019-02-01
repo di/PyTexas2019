@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
 
-import Home from "./pages/home";
-import mdPage from "./pages/md-page";
+import Home from "./pages/home.vue";
+import mdPage from "./pages/md-page.vue";
 // import Sponsors from "./pages/sponsors";
 // import Program from "./pages/program";
 // import Talk from "./pages/talk";

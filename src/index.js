@@ -17,7 +17,7 @@ Vue.use(Vuetify, {
   }
 });
 
-import App from './app.js';
+import App from './app.vue';
 
 var app = new Vue({
   el: '#pytxapp',
@@ -35,5 +35,8 @@ var app = new Vue({
       document.querySelector("#pytxapp").style.display = 'block';
       document.querySelector("#splash").style.display = 'none';
     }
+  },
+  components: {
+    "pytx-app": App
   }
 });

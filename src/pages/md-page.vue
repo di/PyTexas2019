@@ -1,11 +1,21 @@
+<template>
+<div class="md-page">
+  <v-card class="padding">
+    <h1>
+      {{ title }}
+    </h1>
+    <div v-html="html"></div>
+  </v-card>
+</div>
+</template>
+<script>
 import Vue from "vue";
 import showdown from "showdown";
 import axios from 'axios';
 
 import { image } from "../filters";
 
-var mdPage = Vue.component("md-page", {
-  template: "#tpl-pages-md-page",
+export default {
   props: ["slug"],
   data() {
     return {
@@ -41,6 +51,5 @@ var mdPage = Vue.component("md-page", {
         });
     }
   }
-});
-
-export default mdPage;
+};
+</script>
