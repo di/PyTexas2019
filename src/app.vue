@@ -43,6 +43,14 @@
           </v-list-tile-action>
           <v-list-tile-title>Submit a Talk</v-list-tile-title>
         </v-list-tile>
+        <v-list-tile href="https://ti.to/pytexas/pytexas-2019" target="_blank">
+          <v-list-tile-action>
+            <v-icon>how_to_reg</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Register
+          </v-list-tile-title>
+        </v-list-tile>
         <v-list-tile to="/page/venue">
           <v-list-tile-action>
             <img :src="image('img/icons/venue.svg')" alt="">

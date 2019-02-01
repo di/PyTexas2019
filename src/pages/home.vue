@@ -14,14 +14,14 @@
         <br>
         <v-btn color="primary" href="https://www.papercall.io/pytexas-2019
 " target="_blank">
-          Submit a Talk Proposal
+          Submit a Talk Proposal&nbsp;<img class="ext" :src="image('img/icons/external-white.svg')" alt="">
         </v-btn>
         <v-btn color="primary" to="/page/sponsors/prospectus">
           Become A Sponsor
         </v-btn>
-        <!--<v-btn color="primary" href="" target="_blank">-->
-        <!--  Register-->
-        <!--</v-btn>-->
+        <v-btn color="primary" href="https://ti.to/pytexas/pytexas-2019">
+          Register&nbsp;<img class="ext" :src="image('img/icons/external-white.svg')" alt="">
+        </v-btn>
         <br><br>
         <em>
           More annoucements to come soon.
