@@ -8,7 +8,9 @@
         <br>
         Austin, Texas
         <br>
-        at the <a href="http://library.austintexas.gov/central-library" target="_blank">Central Austin Public Library</a>
+        at the <a href="http://library.austintexas.gov/central-library" target="_blank">
+          Austin Central Public Library
+        </a>
       </h2>
       <div class="tc">
         <br>
@@ -34,7 +36,7 @@
   </v-card>
   <v-card class="main padding venue">
     <div class="tc">
-      <h2>The Venue: Austin Public Library</h2>
+      <h2>The Venue: Austin Central Public Library</h2>
       <div class="images">
         <a :href="image('img/apl/library1.png')">
           <img :src="resize(image('img/apl/library1.png'), 300, 300, 'fit=crop')" alt="Library photo 1">
