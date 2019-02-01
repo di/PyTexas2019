@@ -11,9 +11,7 @@ export function resize(url, w, h) {
     return url;
   }
 
-  url = url.replace("https://pytexas.s3.amazonaws.com", "");
-
-  return `https://pytx.imgix.net${url}?w=${w}&h=${h}`;
+  return `https://pytxapp.imgix.net${url}?w=${w}&h=${h}`;
 }
 
 export function time(dt) {
