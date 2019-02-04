@@ -9,7 +9,6 @@
 </div>
 </template>
 <script>
-import Vue from "vue";
 import showdown from "showdown";
 import axios from 'axios';
 

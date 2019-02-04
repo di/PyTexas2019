@@ -16,9 +16,6 @@
     "url": "https://github.com/pytexas/PyTexas2019/issues"
   },
   "homepage": "https://github.com/pytexas/PyTexas2019#readme",
-  "alias": {
-    "vue": "./node_modules/vue/dist/vue.common.js"
-  },
   "devDependencies": {},
   "dependencies": {
     "@vue/component-compiler-utils": "^2.5.2",
