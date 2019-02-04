@@ -1,14 +1,14 @@
 # Frequently Asked Questions
 
-## I want to volunteer or speak. Can I get a discount?
+## What can I do if I can't afford to attend?
 
+PyTexas offers a limited number of opportunity grants for community members that
+would be otherwise unable to attend: [see here for more details](/2019/page/about/grants).
+
+## Can I get a discount for volunteering or speaking?
 We do not currently have the funds to provide discounted or free attendance to volunteers or
 speakers. Even our organizing team purchases tickets, because all funds are eventually used to
 better the Texas Python community. For the same reasons, we do not generally pay speakers.
-
-However, we do offer a limited number of scholarships for special cases. If you are facing financial
-hardship, please email us at [conference@pytexas.org](mailto:conference@pytexas.org). Our goal is to ensure
-that everyone who wants to attend PyTexas can do so.
 
 ## How much of my sponsorship or ticket price goes to the conference?
 

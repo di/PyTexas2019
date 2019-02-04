@@ -67,6 +67,9 @@
           <v-list-tile to="/page/about/conference">
             <v-list-tile-title>About the Conference</v-list-tile-title>
           </v-list-tile>
+          <v-list-tile to="/page/about/grants">
+            <v-list-tile-title>Opportunity Grants</v-list-tile-title>
+          </v-list-tile>
           <v-list-tile to="/page/about/diversity-statement">
             <v-list-tile-title>Diversity Statement</v-list-tile-title>
           </v-list-tile>
