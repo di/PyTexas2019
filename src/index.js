@@ -1,4 +1,4 @@
-import Vue from './vue.common.js';
+import Vue from 'vue';
 import Vuetify from 'vuetify';
 import VueRouter from "vue-router";
 

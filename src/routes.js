@@ -1,4 +1,4 @@
-import Vue from './vue.common.js';
+import Vue from 'vue';
 import VueRouter from "vue-router";
 
 import Home from "./pages/home.vue";
