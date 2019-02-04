@@ -4,7 +4,8 @@
   "description": "PyTexas 2019 Conference Site Frontend",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,10 @@
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
   },
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "showdown": "^1.9.0",
     "@vue/component-compiler-utils": "^2.5.2",
     "graphql.js": "^0.6.1",
     "gulp": "^4.0.0",
@@ -31,9 +35,5 @@
     "vue-router": "^3.0.2",
     "vue-template-compiler": "^2.5.22",
     "vuetify": "^1.4.4"
-  },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "showdown": "^1.9.0"
   }
 }
