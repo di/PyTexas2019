@@ -25,7 +25,6 @@ function copy_files (done) {
   var commands = [
     `rm -rf dist/img`,
     `rm -rf dist/md`,
-    `cp node_modules/vuetify/dist/vuetify.min.css dist`,
     `cp -r img/ dist/`,
     `cp -r md/ dist/`,
     `cp favicon.ico dist/`,
