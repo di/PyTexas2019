@@ -5,10 +5,8 @@ var plumber = require('gulp-plumber');
 var exec = require('child_process').exec;
 var plumber = require('gulp-plumber');
 
-var dir = process.env.JS_BUILD_DIR || '.';
-
 function build_js (done) {
-  exec(`parcel build ${dir}/src/index.js -d ${dir}/dist -o pytexas.js`, function (err, stdout, stderr) {
+  exec(`parcel build src/index.js -d dist -o pytexas.js`, function (err, stdout, stderr) {
     console.log(stdout);
     console.error(stderr);
     done(err);
@@ -16,7 +14,7 @@ function build_js (done) {
 }
 
 function create_dist (done) {
-  exec(`mkdir ${dir}/dist/`, function (err, stdout, stderr) {
+  exec(`mkdir dist/`, function (err, stdout, stderr) {
     console.log(stdout);
     console.error(stderr);
     done();
@@ -25,12 +23,12 @@ function create_dist (done) {
 
 function copy_files (done) {
   var commands = [
-    `rm -rf ${dir}/dist/img`,
-    `rm -rf ${dir}/dist/md`,
+    `rm -rf dist/img`,
+    `rm -rf dist/md`,
     `cp node_modules/vuetify/dist/vuetify.min.css dist`,
-    `cp -r ${dir}/img/ ${dir}/dist/`,
-    `cp -r ${dir}/md/ ${dir}/dist/`,
-    `cp ${dir}/favicon.ico ${dir}/dist/`,
+    `cp -r img/ dist/`,
+    `cp -r md/ dist/`,
+    `cp favicon.ico dist/`,
   ];
   exec(commands.join(' &&'), function (err, stdout, stderr) {
     console.log(stdout);
@@ -41,18 +39,18 @@ function copy_files (done) {
 
 function build_less (done) {
   return gulp
-    .src([`${dir}/src/**/*.less`])
+    .src([`src/**/*.less`])
     .pipe(plumber())
     .pipe(less({paths: []}))
     .pipe(concat('global.css'))
-    .pipe(gulp.dest(`${dir}/dist`));
+    .pipe(gulp.dest(`dist`));
 }
 
 function watch () {
-  gulp.watch(`${dir}/src/**/*.less`, gulp.parallel(build_less));
-  gulp.watch([`${dir}/src/**/*.js`, "src/**/*.vue"], gulp.parallel(build_js));
-  gulp.watch(`${dir}/img/**/*`, gulp.parallel(copy_files));
-  gulp.watch(`${dir}/md/**/*`, gulp.parallel(copy_files));
+  gulp.watch(`src/**/*.less`, gulp.parallel(build_less));
+  gulp.watch([`src/**/*.js`, "src/**/*.vue"], gulp.parallel(build_js));
+  gulp.watch(`img/**/*`, gulp.parallel(copy_files));
+  gulp.watch(`md/**/*`, gulp.parallel(copy_files));
 }
 
 var defaultTasks = gulp.series(
