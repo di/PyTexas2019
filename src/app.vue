@@ -84,11 +84,14 @@
           <v-list-tile slot="activator">
             <v-list-tile-title>Community</v-list-tile-title>
           </v-list-tile>
-          <v-list-tile to="/page/community/employers">
-            <v-list-tile-title>Employers</v-list-tile-title>
+          <v-list-tile to="/page/community/chat">
+            <v-list-tile-title>Chat Room</v-list-tile-title>
           </v-list-tile>
           <v-list-tile to="/page/community/mailing-list">
             <v-list-tile-title>Mailing List</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile to="/page/community/employers">
+            <v-list-tile-title>Employers</v-list-tile-title>
           </v-list-tile>
           <v-list-tile to="/page/community/meetups">
             <v-list-tile-title>Meetups</v-list-tile-title>

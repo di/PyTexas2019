@@ -25,12 +25,24 @@
           Register&nbsp;<img class="ext" :src="image('img/icons/external-white.svg')" alt="">
         </v-btn>
         <br><br>
-        <em>
-          More annoucements to come soon.
-          <a href="https://twitter.com/pytexas" target="_blank">Follow PyTexas</a>
-          on Twitter or join our
-          <router-link to="/page/community/mailing-list">mailing list</router-link> to stay updated.
-        </em>
+        <h2>Stay Updated</h2>
+        <ul>
+          <li>
+            Twitter: <a href="https://twitter.com/pytexas" target="_blank">
+              @PyTexas
+            </a>
+          </li>
+          <li>
+            Slack: <a href="https://pytexas.slack.com" target="_blank">
+              PyTexas Slack
+            </a> - <a href="https://pytexas-slack.herokuapp.com/" target="_blank">
+              Request an Invite
+            </a>
+          </li>
+          <li>
+            Mailing List: <router-link to="/page/community/mailing-list">Sign Up</router-link>
+          </li>
+        </ul>
       </div>
     </div>
   </v-card>
@@ -72,6 +84,10 @@ export default {
 </script>
 <style lang="less">
   .home-page {
+    ul {
+      list-style-type: none;
+    }
+    
     .venue {
       img {
         width: 300px;
