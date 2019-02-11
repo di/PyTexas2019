@@ -17,9 +17,9 @@ export function resize(url, w, h, extra) {
     return url.replace("s=256", "s=" + w);
   }
 
-  if (DEBUG) {
-    return url;
-  }
+  // if (DEBUG) {
+  //   return url;
+  // }
 
   return `https://pytxapp.imgix.net${url}?w=${w}&h=${h}${extra}`;
 }
