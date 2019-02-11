@@ -1,5 +1,9 @@
 export function image(path) {
-  return IMAGES[path];
+  if (IMAGES[path]) {
+    return IMAGES[path];
+  }
+  
+  return URLS.static + path;
 }
 
 export function resize(url, w, h, extra) {
@@ -8,7 +12,6 @@ export function resize(url, w, h, extra) {
   } else {
     extra = '';
   }
-
 
   if (url.indexOf("gravatar") > -1) {
     return url.replace("s=256", "s=" + w);
