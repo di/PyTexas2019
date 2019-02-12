@@ -28,6 +28,7 @@ function copy_files (done) {
     `cp -r img/ dist/`,
     `cp -r md/ dist/`,
     `cp favicon.ico dist/`,
+    `cp node_modules/vuetify/dist/vuetify.min.css dist/`,
   ];
   exec(commands.join(' &&'), function (err, stdout, stderr) {
     console.log(stdout);
