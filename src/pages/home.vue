@@ -54,27 +54,27 @@
           <img :src="resize(image('img/keynote/emily.jpg'), 200, 200, 'fit=facearea&facepad=2.5')" alt="Emily Morehouse-Valcarcel">
           <h3>Emily Morehouse-Valcarcel</h3>
           <p>
-            Emily is the Director of Engineering at 
-            Cuttlesoft, a digital product agency focused on creating 
-            beautifully designed software. Her passion is driven by a blend 
-            of empathy, strategy, curiosity, and human-centered design. 
-            She's a Python Core Developer, avid OSS contributor, and constant 
-            learner focused on building tools to automate the mundane and shed 
-            light on the complexity of the human experience. Emily holds 
-            degrees in Computer Science, Criminology, and Theatre from Florida 
-            State University. 
+            Emily is the Director of Engineering at
+            Cuttlesoft, a digital product agency focused on creating
+            beautifully designed software. Her passion is driven by a blend
+            of empathy, strategy, curiosity, and human-centered design.
+            She's a Python Core Developer, avid OSS contributor, and constant
+            learner focused on building tools to automate the mundane and shed
+            light on the complexity of the human experience. Emily holds
+            degrees in Computer Science, Criminology, and Theatre from Florida
+            State University.
           </p>
         </div>
         <div>
           <img :src="resize(image('img/keynote/adrienne.jpg'), 200, 200, 'fit=facearea&facepad=2.5')" alt="Adrienne Lowe">
           <h3>Adrienne Lowe</h3>
           <p>
-            Adrienne is the Director of Engineering at Juice Analytics 
-            and former Director of Advancement for the Django Software 
-            Foundation, where she worked on the corporate membership program. 
-            She is also an O'Reilly contributor and a technical editor of Head 
-            First Python. Adrienne shares thoughts on coding, cooking, and 
-            compassionate leadership at her website Coding with Knives. She is 
+            Adrienne is the Director of Engineering at Juice Analytics
+            and former Director of Advancement for the Django Software
+            Foundation, where she worked on the corporate membership program.
+            She is also an O'Reilly contributor and a technical editor of Head
+            First Python. Adrienne shares thoughts on coding, cooking, and
+            compassionate leadership at her website Coding with Knives. She is
             based in Nashville, Tennessee.
           </p>
         </div>
@@ -124,38 +124,38 @@ export default {
   ul {
     list-style-type: none;
   }
-  
+
   .speakers {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    
+
     img {
       display: block;
       margin: 10px auto;
       border-radius: 10px;
     }
-    
+
     > div {
       width: calc(50% - 40px);
       margin: 0 20px;
-      
+
       &:first-child {
-        
+
       }
     }
-    
+
     @media @small {
       > div {
         width: 100%;
       }
     }
-    
+
     p {
       text-align: justify;
     }
   }
-  
+
   .venue {
     img {
       width: 300px;
