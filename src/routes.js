@@ -9,7 +9,7 @@ import mdPage from "./pages/md-page.vue";
 // import Speaker from "./pages/speaker";
 // import Videos from "./pages/videos";
 
-const NotFound = { template: "#tpl-404" };
+const NotFound = { template: "<div><h1>404 - Page Not Found</h1></div>" };
 
 function current_schedule(to) {
   var d = new Date();
