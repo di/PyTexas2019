@@ -53,6 +53,10 @@
         <div>
           <img class="headshot" :src="resize(image('img/keynote/emily.jpg'), 200, 200, 'fit=facearea&facepad=2.5')" alt="Emily Morehouse-Valcarcel">
           <h3>Emily Morehouse-Valcarcel</h3>
+          <h4 class="inline">
+            <img :src="resize(image('img/social/twitter.png'), 20, 20)">
+            <a href="https://twitter.com/emilyemorehouse/">@emilyemorehouse</a>
+          </h4>
           <p>
             Emily is the Director of Engineering at
             Cuttlesoft, a digital product agency focused on creating
@@ -68,6 +72,10 @@
         <div>
           <img class="headshot" :src="resize(image('img/keynote/adrienne.jpg'), 200, 200, 'fit=facearea&facepad=2.5')" alt="Adrienne Lowe">
           <h3>Adrienne Lowe</h3>
+          <h4 class="inline">
+            <img :src="resize(image('img/social/twitter.png'), 20, 20)">
+            <a href="https://twitter.com/adriennefriend/">@adriennefriend</a>
+          </h4>
           <p>
             Adrienne is the Director of Engineering at Juice Analytics
             and former Director of Advancement for the Django Software
@@ -170,6 +178,11 @@ export default {
       align-items: center;
     }
   }
+}
+
+.inline a, .inline img {
+   display: inline-block;
+   vertical-align: middle;
 }
 </style>
 
