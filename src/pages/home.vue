@@ -51,7 +51,7 @@
       <h2>Keynote Speakers</h2>
       <div class="speakers">
         <div>
-          <img :src="resize(image('img/keynote/emily.jpg'), 200, 200, 'fit=facearea&facepad=2.5')" alt="Emily Morehouse-Valcarcel">
+          <img class="headshot" :src="resize(image('img/keynote/emily.jpg'), 200, 200, 'fit=facearea&facepad=2.5')" alt="Emily Morehouse-Valcarcel">
           <h3>Emily Morehouse-Valcarcel</h3>
           <p>
             Emily is the Director of Engineering at
@@ -66,7 +66,7 @@
           </p>
         </div>
         <div>
-          <img :src="resize(image('img/keynote/adrienne.jpg'), 200, 200, 'fit=facearea&facepad=2.5')" alt="Adrienne Lowe">
+          <img class="headshot" :src="resize(image('img/keynote/adrienne.jpg'), 200, 200, 'fit=facearea&facepad=2.5')" alt="Adrienne Lowe">
           <h3>Adrienne Lowe</h3>
           <p>
             Adrienne is the Director of Engineering at Juice Analytics
@@ -130,7 +130,7 @@ export default {
     flex-wrap: wrap;
     margin-top: 20px;
 
-    img {
+    .headshot {
       display: block;
       margin: 10px auto;
       border-radius: 10px;
